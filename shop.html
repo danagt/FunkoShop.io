@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop.css">
     <title>FunkoShop</title>
 </head>
 <body>
-    
     <header> <!-- BARRA DE NAVEGACION -->
         <nav style="background-color: #30343F;">
             <picture>
@@ -34,48 +33,44 @@
             </ul>
         </nav>
     </header> <!-- FIN BARRA DE NAVEGACION -->
-    
-    
-    <main> 
-        <section> <!-- BANNER -->
-            <article>
-                <h1><b>Nuevos Ingresos</b></h1>
-                <p>Descubrí el próximo Funko Pop de tu colección</p>
-                <a href="./pages/shop.html">SHOP</a>          
-            </article>
-        </section> <!-- FIN BANNER -->
-<!-- COLECCIONES -->
-        <section> 
-            <article>
-                <h3>Star Wars & The Mandalorian</h3>
-                <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                <a href="./pages/shop.html">VER COLECCIÓN</a>
-            </article>
-            <picture>
-                <img src="img/star-wars/baby-yoda-1.webp" alt="Muñequito de Grogu Baby Yoda de The Mandalorian">
-            </picture>
+
+    <aside>
+        <section>
+            <h3>BUSCAR</h3>
+            <form action="">
+                <input type="text" placeholder="item o categoria">
+            </form>
         </section>
-        <section> 
-            <article>
-                <h3>POKEMON INDIGO</h3>
-                <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                <a href="./pages/shop.html">VER COLECCIÓN</a>
-            </article>
-            <picture>
-                <img src="img/pokemon/vulpix-1.webp" alt="Muñequito de Vulpix de Pokemon">
-            </picture>
+        <section>
+            <h3>ORDENAR POR</h3>
+            <form action="">
+                <select>
+                    <option value="">Mayor a menor</option>
+                    <option value="">Menor a mayor</option>
+              </select>
+            </form>
         </section>
-        <section> 
-            <article>
-                <h3>hARRY POTTER</h3>
-                <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                <a href="./pages/shop.html">VER COLECCIÓN</a>
-            </article>
-            <picture>
-                <img src="img/harry-potter/snape-patronus-1.webp" alt="Muñequito del Patronus de Harry Potter">
-            </picture>
+        <section>
+            <h3>PRECIO</h3>
+            <form action="">
+                <label for="">MIN</label>
+                <input type="number" min="0" placeholder="0"> -
+                <label for="">MAX</label>
+                <input type="number" max="9999999999" placeholder="0">
+            </form>
         </section>
-        
+        <section>
+            <h3>FILTRAR</h3>
+            <form action="">
+                <input type="checkbox" name="">NUEVOS <br>
+                <input type="checkbox" name="">OFERTAS <br>
+                <input type="checkbox" name="">EDICIÓN ESPECIAL <br>
+                <input type="checkbox" name="">FAVORITOS
+            </form>
+        </section>
+    </aside>
+
+    <main>
         <section>
             <h2>ÚLTIMOS LANZAMIENTOS</h2>
             <ul>
@@ -127,9 +122,20 @@
                 </li>
             </ul>
         </section>
-        <!-- FIN COLECCIONES -->
-    </main>     
-    
+        <section>
+            <ul class="pagination">
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a class="active" href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
     <footer style="background-color: #30343F;">
         <section>
             <nav>
@@ -146,5 +152,6 @@
         </section>
         <p>All rights reserved 2022 - Funkoshop &copy;</p>
     </footer>
+    <!-- FIN DEL FOOTER -->
 </body>
 </html>
