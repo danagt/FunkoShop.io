@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".css">
+    <title>FunkoShop</title>
+</head>
+<body>
+    <header> <!-- BARRA DE NAVEGACION -->
+        <nav>
+            <picture>
+                <a href="./index.html">
+                    <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+                </a>
+            </picture>
+            <ul>
+                <li>
+                    <a href="./shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="./pages/contact.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./pages/login.html">Login</a>
+                </l>
+                <li>
+                    <a href="./pages/cart.html">
+                        <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!-- FIN BARRA DE NAVEGACION -->
+
+    <main>
+        <section> 
+            <article>
+                <p>STAR WARS</p>
+                <h3>BABY YODA BLUEBALL</h3>
+                <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+                <h3>$ 1799,99.-</h3>
+                <form >
+                    <button onclick="decrementar()">-</button>
+                    <input type="text" value="0" id="item" name="item">
+                    <button onclick="incrementar()">+</button>
+                    <button onclick="makeAnOrder()">Añadir al Carrito</button>
+                </form>
+                <p></p><a href="./pages/shop.html" style="font-family: inter";>Ver métodos de pago</a>- 3 CUOTAS SIN INTERÉS</p>
+
+            </article>
+            <picture>
+                <img src="img/star-wars/baby-yoda-1.webp" alt="Muñequito de Grogu Baby Yoda de The Mandalorian">
+            </picture>
+        </section>
+
+        <section>
+            <h2>PRODUCTOS RELACIONADOS</h2>
+            <ul>
+                <li>
+                    <article>
+                        <a href=""></a>
+                        <picture>
+                            <img src="img/star-wars/trooper-1.webp" alt="Muñequito de Stormtrooper de Star Wars">
+                        </picture>
+                        <div>
+                            <p>STAR WARS</p>
+                            <h4>STROMTROOPER LIGHTSABER</h4>
+                            <p>$ 1799,99</p>
+                            <p>3 CUOTAS SIN INTERES</p>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <article>
+                            <a href=""></a>
+                            <picture>
+                                <img src="img/pokemon/pidgeotto-1.webp" alt="Muñequito de un Pidgeotto de Pokemon">
+                            </picture>
+                            <div>
+                                <p>POKEMON</p>
+                                <h4>PIDGEOTTO</h4>
+                                <p>$ 1799,99</p>
+                                <p>3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </article>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <article>
+                            <a href=""></a>
+                            <picture>
+                                <img src="img/harry-potter/luna-1.webp" alt="Muñequito de un Luna Lovegood de Harry Potter">
+                            </picture>
+                            <div>
+                                <p>HARRY POTTER</p>
+                                <h4>LUNA LOVEGOOD LION MASK</h4>
+                                <p>$ 1799,99</p>
+                                <p>3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </article>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="./shop.html">SHOP</a></li>
+                    <li><a href="./pages/register.html">REGISTRARSE</a></li>
+                    <li><a href="./pages/login.html">INGRESAR</a></li>
+                    <li><a href="./pages/contact.html">CONTACTO</a></li>
+                </ul>
+                <picture>
+                    <img src="img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" width="195" height="100" />
+                </picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2022 - Funkoshop &copy;</p>
+    </footer>
+</body>
+</html>
